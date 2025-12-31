@@ -1,0 +1,62 @@
+{
+  "name": "fuzzy-explorer",
+  "description": "Fuzzy search files across user-defined directories",
+  "repository": "https://github.com/asiloisad/pulsar-fuzzy-explorer",
+  "version": "0.0.0",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.100.0 <2.0.0"
+  },
+  "main": "./lib/main",
+  "activationCommands": {
+    "atom-workspace": [
+      "fuzzy-explorer:toggle",
+      "fuzzy-explorer:edit"
+    ]
+  },
+  "consumedServices": {
+    "atom.file-icons": {
+      "versions": {
+        "1.0.0": "consumeClassIcons"
+      }
+    },
+    "open-external": {
+      "versions": {
+        "^1.0.0": "consumeOpenExternalService"
+      }
+    },
+    "claude-chat": {
+      "versions": {
+        "^1.0.0": "consumeClaudeChat"
+      }
+    }
+  },
+  "dependencies": {
+    "cson": "^7.20.0",
+    "glob": "^10.5.0",
+    "pulsar-select-list": "^1.2.2"
+  },
+  "configSchema": {
+    "separator": {
+      "order": 1,
+      "title": "Type of separator in file paths",
+      "description": "Type of separator for the file path when copying or pasting.",
+      "type": "integer",
+      "enum": [
+        {
+          "value": 0,
+          "description": "Default"
+        },
+        {
+          "value": 1,
+          "description": "Forward Slash"
+        },
+        {
+          "value": 2,
+          "description": "Backslash"
+        }
+      ],
+      "default": 0
+    }
+  }
+}
