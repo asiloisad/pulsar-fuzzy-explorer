@@ -3,7 +3,7 @@
 
 '.fuzzy-explorer atom-text-editor[mini]':
   'enter': 'select-list:open'
-  'alt-enter': 'select-list:open-externally'
+  'alt-enter': 'select-list:open-external'
   'ctrl-enter': 'select-list:show-in-folder'
   'alt-left': 'select-list:split-left'
   'alt-right': 'select-list:split-right'

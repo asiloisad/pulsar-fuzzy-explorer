@@ -37,7 +37,7 @@ Commands available in `atom-workspace`:
 Commands available in `.fuzzy-explorer`:
 
 - `select-list:open`: (`Enter`) open file,
-- `select-list:open-externally`: (`Ctrl+Enter`) open file externally,
+- `select-list:open-external`: (`Ctrl+Enter`) open file externally,
 - `select-list:show-in-folder`: (`Alt+Enter`) show in folder,
 - `select-list:split-left/right/up/down`: (`Alt+Left/Right/Up/Down`) open in split pane,
 - `select-list:update`: (`F5`) refresh file index,
